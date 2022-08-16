@@ -1,5 +1,7 @@
 package com.qa.opencart.listeners;
 
+import static com.qa.opencart.factory.DriverFactory.getScreenshot;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,8 +17,6 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
-import static com.qa.opencart.factory.DriverFactory.getScreenshot;
 
 public class ExtentReportListener implements ITestListener {
 

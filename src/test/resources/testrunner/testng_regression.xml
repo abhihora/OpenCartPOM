@@ -3,7 +3,13 @@
 
 <suite name="Opencart App Test Regression Suite" thread-count="4" parallel="tests" verbose="4">
 
-	 <test name="Login Page Test">
+
+	<listeners>
+		<listener class-name="com.qa.opencart.listeners.ExtentReportListener" />
+		<listener class-name="com.qa.opencart.listeners.TestAllureListener" />
+	</listeners>
+
+	<test name="Login Page Test">
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
@@ -18,12 +24,6 @@
 	<test name="Product Search Test">
 		<classes>
 			<class name="com.qa.opencart.tests.ProductSearchTest" />
-		</classes>
-	</test>
-	
-	<test name="Register Page Test">
-		<classes>
-			<class name="com.qa.opencart.tests.RegisterTest" />
 		</classes>
 	</test>
 
