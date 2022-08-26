@@ -31,7 +31,7 @@ public class AccountsPage {
 	// 3. page_Actions
 	public String getAccountPageTitle() {
 		String title = eleutil.waitForTitleToBe(AppConstants.ACCOUNTS_PAGE_TITLE, AppConstants.SMALL_DEFAULT_TIME_OUT);
-		System.out.println("Account page title : " + title);
+		System.out.println("Account current page title : " + title);
 		return title;
 	}
 
